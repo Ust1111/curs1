@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4351332D2DC682BA0069704E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4351332C2DC682BA0069704E /* GoogleService-Info.plist */; };
+		435133302DC683D00069704E /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4351332F2DC683D00069704E /* FirebaseCore */; };
+		435133322DC683D00069704E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 435133312DC683D00069704E /* FirebaseFirestore */; };
+		4351337A2DC8F9F10069704E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 435133792DC8F9F10069704E /* FirebaseAuth */; };
+		4351337C2DC8F9F10069704E /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4351337B2DC8F9F10069704E /* FirebaseCore */; };
+		4351337E2DC8F9F10069704E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4351337D2DC8F9F10069704E /* FirebaseFirestore */; };
+		435133802DC8F9F10069704E /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4351337F2DC8F9F10069704E /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		43BA86F82DC231CD0052C476 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4351332C2DC682BA0069704E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		43BA86E72DC231CC0052C476 /* курсач.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "курсач.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BA86F72DC231CD0052C476 /* курсачTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "курсачTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BA87012DC231CD0052C476 /* курсачUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "курсачUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +63,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				435133302DC683D00069704E /* FirebaseCore in Frameworks */,
+				435133802DC8F9F10069704E /* FirebaseStorage in Frameworks */,
+				4351337A2DC8F9F10069704E /* FirebaseAuth in Frameworks */,
+				435133322DC683D00069704E /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4351337C2DC8F9F10069704E /* FirebaseCore in Frameworks */,
+				4351337E2DC8F9F10069704E /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +96,7 @@
 				43BA86FA2DC231CD0052C476 /* курсачTests */,
 				43BA87042DC231CD0052C476 /* курсачUITests */,
 				43BA86E82DC231CC0052C476 /* Products */,
+				4351332C2DC682BA0069704E /* GoogleService-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +130,10 @@
 			);
 			name = "курсач";
 			packageProductDependencies = (
+				4351332F2DC683D00069704E /* FirebaseCore */,
+				435133312DC683D00069704E /* FirebaseFirestore */,
+				435133792DC8F9F10069704E /* FirebaseAuth */,
+				4351337F2DC8F9F10069704E /* FirebaseStorage */,
 			);
 			productName = "курсач";
 			productReference = 43BA86E72DC231CC0052C476 /* курсач.app */;
@@ -135,6 +157,8 @@
 			);
 			name = "курсачTests";
 			packageProductDependencies = (
+				4351337B2DC8F9F10069704E /* FirebaseCore */,
+				4351337D2DC8F9F10069704E /* FirebaseFirestore */,
 			);
 			productName = "курсачTests";
 			productReference = 43BA86F72DC231CD0052C476 /* курсачTests.xctest */;
@@ -171,7 +195,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1610;
-				LastUpgradeCheck = 1610;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					43BA86E62DC231CC0052C476 = {
 						CreatedOnToolsVersion = 16.1;
@@ -195,6 +219,9 @@
 			);
 			mainGroup = 43BA86DE2DC231CC0052C476;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4351332E2DC683D00069704E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 43BA86E82DC231CC0052C476 /* Products */;
 			projectDirPath = "";
@@ -212,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4351332D2DC682BA0069704E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +424,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"курсач/Preview Content\"";
+				DEVELOPMENT_TEAM = 5XNSZ2D92T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -403,12 +432,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "programm.------";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ustinia.kursach1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -424,6 +454,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"курсач/Preview Content\"";
+				DEVELOPMENT_TEAM = 5XNSZ2D92T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -431,12 +462,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "programm.------";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ustinia.kursach1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -450,6 +482,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5XNSZ2D92T;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				MARKETING_VERSION = 1.0;
@@ -468,6 +501,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5XNSZ2D92T;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				MARKETING_VERSION = 1.0;
@@ -485,6 +519,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5XNSZ2D92T;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "programm.------UITests";
@@ -501,6 +536,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5XNSZ2D92T;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "programm.------UITests";
@@ -552,6 +588,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4351332E2DC683D00069704E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4351332F2DC683D00069704E /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4351332E2DC683D00069704E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		435133312DC683D00069704E /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4351332E2DC683D00069704E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		435133792DC8F9F10069704E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4351332E2DC683D00069704E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		4351337B2DC8F9F10069704E /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4351332E2DC683D00069704E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		4351337D2DC8F9F10069704E /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4351332E2DC683D00069704E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		4351337F2DC8F9F10069704E /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4351332E2DC683D00069704E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 43BA86DF2DC231CC0052C476 /* Project object */;
 }
